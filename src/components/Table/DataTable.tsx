@@ -42,7 +42,7 @@ const DataTable: React.FC<DataTableProps> = ({ data, columns }) => {
 
         const maxRow = 25; 
         const maxCol = columns.length - 1;
-        let { row, col } = prev;
+        const { row, col } = prev;
 
         switch (e.key) {
           case "ArrowUp":
