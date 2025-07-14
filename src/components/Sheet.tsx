@@ -1,4 +1,3 @@
-// import TopBar from "./TopBar";
 import BottomTabs from "./BottomTabs";
 import DataTable from "./Table/DataTable";
 import TopNav from "./TopNav";
