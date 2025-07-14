@@ -6,17 +6,17 @@ export const columns: ColumnDef<JobData>[] = [
   {
     accessorKey: "jobRequest",
     header: "Job Request",
-    cell: info => (
-      <span className="text-sm">
-        {info.getValue() as string}
-      </span>
+    cell: info => (        
+        <span className="text-sm text-[#121212]">
+          {info.getValue() as string}
+        </span>
     ),
   },
   {
     accessorKey: "submitted",
     header: "Submitted",
     cell: info => (
-      <span className="text-sm">{info.getValue() as string}</span>
+        <span className="text-sm text-[#121212]">{info.getValue() as string}</span>
     ),
   },
   {
@@ -31,14 +31,14 @@ export const columns: ColumnDef<JobData>[] = [
         "Blocked": "bg-red-100 text-red-800",
       };
       return (
-        <span
-          className={clsx(
-            "text-xs font-medium px-2.5 py-0.5 rounded-full capitalize w-fit",
-            colorMap[status] || "bg-gray-100 text-gray-800"
-          )}
-        >
-          {status}
-        </span>
+          <span
+            className={clsx(
+              "text-xs font-medium px-2.5 py-0.5 rounded-full capitalize w-fit",
+              colorMap[status] || "bg-gray-100 text-gray-800"
+            )}
+          >
+            {status}
+          </span>
       );
     },
   },
@@ -46,7 +46,8 @@ export const columns: ColumnDef<JobData>[] = [
     accessorKey: "submitter",
     header: "Submitter",
     cell: info => (
-      <span className="text-sm">{info.getValue() as string}</span>
+        <span className="text-sm text-[#121212]">{info.getValue() as string}</span>
+
     ),
   },
   {
@@ -55,14 +56,16 @@ export const columns: ColumnDef<JobData>[] = [
     cell: info => {
       const url = info.getValue() as string;
       return (
-        <a
-          href={`https://${url}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 underline text-sm max-w-[150px] truncate block"
-        >
-          {url}
-        </a>
+        
+          <a
+            href={`https://${url}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#121212] underline text-sm max-w-[150px] truncate block"
+          >
+            {url}
+          </a>
+        
       );
     },
   },
@@ -70,7 +73,9 @@ export const columns: ColumnDef<JobData>[] = [
     accessorKey: "assigned",
     header: "Assigned",
     cell: info => (
-      <span className="text-sm">{info.getValue() as string}</span>
+      
+        <span className="text-sm text-[#121212]">{info.getValue() as string}</span>
+      
     ),
   },
   {
@@ -94,14 +99,14 @@ export const columns: ColumnDef<JobData>[] = [
     accessorKey: "dueDate",
     header: "Due Date",
     cell: info => (
-      <span className="text-sm">{info.getValue() as string}</span>
+      <span className="text-sm text-[#121212]">{info.getValue() as string}</span>
     ),
   },
   {
     accessorKey: "estValue",
     header: "Est. Value",
     cell: info => (
-      <span className="text-sm">{info.getValue() as string}</span>
+      <span className="text-sm text-[#121212]">{info.getValue() as string}</span>
     ),
   },
 ];

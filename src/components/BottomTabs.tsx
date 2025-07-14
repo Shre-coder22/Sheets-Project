@@ -36,7 +36,7 @@ const BottomTabs = () => {
         >
           <button
             className="px-3 py-2 text-xl text-gray-500 hover:text-green-800 hover:bg-gray-500 rounded-lg"
-            onClick={() => alert("Add Field clicked")}
+            onClick={() => alert("Add Field ")}
           >
             +
           </button>

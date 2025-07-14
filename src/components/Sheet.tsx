@@ -10,7 +10,7 @@ const Sheet = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <TopNav />
       <MainNav />  
-      <main className="flex-1 p-6 overflow-auto">
+      <main className="flex-1 overflow-auto">
         <DataTable data={mockData} columns={columns} />
       </main>
       <BottomTabs />
