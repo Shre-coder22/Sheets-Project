@@ -1,18 +1,19 @@
-import TopBar from "./TopBar";
+// import TopBar from "./TopBar";
 import BottomTabs from "./BottomTabs";
 import DataTable from "./Table/DataTable";
+import TopNav from "./TopNav";
+import MainNav from "./MainNav";
 import { columns } from "./Table/columns";
 import { mockData } from "../data/mockData";
 
 const Sheet = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <TopBar />
-
+      <TopNav />
+      <MainNav />  
       <main className="flex-1 p-6 overflow-auto">
         <DataTable data={mockData} columns={columns} />
       </main>
-
       <BottomTabs />
     </div>
   );
