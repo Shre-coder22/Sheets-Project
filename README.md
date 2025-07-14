@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+# Spreadsheet UI Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect frontend spreadsheet application built using **React**, **TypeScript**, **Tailwind CSS**, and **Vite** — closely matching the Figma design. This is a fully interactive prototype with no backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React** (with hooks)
+- **TypeScript**
+- **Vite** for fast bundling
+- **Tailwind CSS** for styling
+- **React Table** for data grid rendering
+- **Lucide & Custom SVGs** for icons
+- **ESLint** for linting
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧩 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Custom DataTable** with:
+  - Active cell highlighting
+  - Conditional dropdowns per header
+  - Column-wise interactions
+  - Row-hover and active state styling
+- **Top Navigation**
+  - Breadcrumb trail
+  - Search bar with alert on click
+  - Notification bell and profile icon
+- **Main Toolbar**
+  - Buttons: Hide Fields, Sort, Filter, Cell View, Import, Export, Share, New Action
+  - Alerts and console logs for all interactions
+- **Header Actions**
+  - Link, Sync, Split Table, More Options (with click logs)
+- **Responsive layout** with utility-first styling
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The project is deployed on **Netlify** using the `npm run build` → `dist` output.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+You can deploy yourself:
+1. Push the project to GitHub
+2. Import it into Netlify
+3. Set:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+
+---
+
+## ✅ Author
+
+**Shrestha Saxena**  
+4th Year B.Tech CSE | RGIPT  
